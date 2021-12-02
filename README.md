@@ -1,0 +1,2 @@
+# AutoDifficultyChanger
+特定のプレイヤーがログインしている時のみ難易度を変更するpluginです
