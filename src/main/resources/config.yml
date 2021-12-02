@@ -1,0 +1,12 @@
+#### ADC Config #####
+
+#適用するワールド
+worlds:
+  - 'world'
+  - 'world_nether'
+  - 'world_the_end'
+
+#適用するプレイヤー
+players:
+  - 'Alpha9n'
+  - 'testPlayer'

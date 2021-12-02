@@ -1,0 +1,5 @@
+name: AutoDifficultyChanger
+version: '${project.version}'
+main: net.alphakun.plugin.autodifficultychanger.AutoDifficultyChanger
+api-version: 1.17
+description: ADC
