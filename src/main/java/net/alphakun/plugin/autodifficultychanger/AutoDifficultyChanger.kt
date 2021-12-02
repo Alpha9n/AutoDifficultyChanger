@@ -3,6 +3,7 @@ package net.alphakun.plugin.autodifficultychanger
 import net.alphakun.plugin.autodifficultychanger.events.PlayerJoin
 import net.alphakun.plugin.autodifficultychanger.events.PlayerQuit
 import org.bukkit.Bukkit
+import org.bukkit.Difficulty
 import org.bukkit.entity.Player
 import org.bukkit.plugin.java.JavaPlugin
 
@@ -12,11 +13,10 @@ class AutoDifficultyChanger : JavaPlugin() {
         saveDefaultConfig()
         loadConfig()
         generateEvents()
-        onlinePlayers = Bukkit.getOnlinePlayers() as MutableList<Player>
     }
 
     override fun onDisable() {
-        // Plugin shutdown logic
+        ChangeDifficultyUtil.changeDiff(Difficulty.PEACEFUL)
     }
 
     fun loadConfig() {
@@ -32,6 +32,5 @@ class AutoDifficultyChanger : JavaPlugin() {
     companion object {
         var WORLDS: MutableList<String> = mutableListOf()
         var PLAYERS: MutableList<String> = mutableListOf()
-        lateinit var onlinePlayers: MutableList<Player>
     }
 }

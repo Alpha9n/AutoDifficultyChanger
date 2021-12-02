@@ -6,7 +6,7 @@
 
     <groupId>net.alphakun.plugin</groupId>
     <artifactId>AutoDifficultyChanger</artifactId>
-    <version>0.0.1-dev</version>
+    <version>1.0.1-release</version>
     <packaging>jar</packaging>
 
     <name>AutoDifficultyChanger</name>
