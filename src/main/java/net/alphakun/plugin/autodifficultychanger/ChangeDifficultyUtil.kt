@@ -11,6 +11,7 @@ object ChangeDifficultyUtil {
         WORLDS.forEach {
             Bukkit.getWorld(it)!!.difficulty = difficulty
         }
+        if (mPlayer.isEmpty()) return
         mPlayer.forEach{
             it.sendMessage("§f[§aADC§f]:" + "難易度を§6${difficulty.name}§fに変更しました")
         }
